@@ -17,9 +17,11 @@ class Penne: public Makaron
 Makaron* gotujMakaron(const std::string& s)
 {
   Makaron* m;
-  if(s.front==s.back)
+  if(s.front()==s.back()){
     m = new Tagliatelle(3.41,0.42,0.1);
-  else
+  }
+  else{
     m = new Penne;
+  }
   return m
 }
