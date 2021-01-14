@@ -14,7 +14,7 @@ class Penne: public Makaron
   }
 };
 // tutaj definicja metody gotujMakaron
-Makaron* Makaron::gotujMakaron(const std::string& s)
+Makaron * Makaron::gotujMakaron(const std::string & s)
 {
   Makaron* m;
   if(s.front()==s.back()){
