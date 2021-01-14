@@ -5,17 +5,20 @@
 // BEZ definicji metody gotujMakaron (tylko z deklaracją)
 class Makaron
 {
+  public:
+  virtual ~Makaron() = default;
+  virtual double ileMaki(unsigned) const=0;
   void gotujMakaron();
 };
 // Zad1
 // tutaj definicja klasy Tagliatelle
-class Tagliatelle
+class Tagliatelle: public: Makaron
 {
 public:
 	Tagliatelle(double L_, double W_, double R_): L(L_), W(W_), R(R_) {}
 	Tagliatelle(): L(0.5), R(0.5), W(0.5) {}
 
-  double ileMaki(unsigned P) const
+  double ileMaki(unsigned P) const override
 	{
 		return P * L*W*(1. - R)*C;
 	}
