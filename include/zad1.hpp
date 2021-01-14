@@ -12,7 +12,7 @@ class Makaron
 };
 // Zad1
 // tutaj definicja klasy Tagliatelle
-class Tagliatelle: public: Makaron
+class Tagliatelle: public Makaron
 {
 public:
 	Tagliatelle(double L_, double W_, double R_): L(L_), W(W_), R(R_) {}
