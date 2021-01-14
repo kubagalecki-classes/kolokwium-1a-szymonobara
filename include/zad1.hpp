@@ -9,7 +9,7 @@ class Makaron
   public:
   virtual ~Makaron() = default;
   virtual double ileMaki(unsigned) const=0;
-  static gotujMakaron();
+  static Makaron * gotujMakaron();
 };
 // Zad1
 // tutaj definicja klasy Tagliatelle
