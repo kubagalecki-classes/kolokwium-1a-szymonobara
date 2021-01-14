@@ -1,4 +1,5 @@
 #include "catch.hpp"
+#include <string>
 
 // Zad2
 // tutaj definicja klasy Makaron
@@ -8,7 +9,7 @@ class Makaron
   public:
   virtual ~Makaron() = default;
   virtual double ileMaki(unsigned) const=0;
-  void gotujMakaron();
+  void gotujMakaron(std::string);
 };
 // Zad1
 // tutaj definicja klasy Tagliatelle

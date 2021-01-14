@@ -23,5 +23,5 @@ Makaron* gotujMakaron(const std::string& s)
   else{
     m = new Penne;
   }
-  return m
+  return m;
 }
